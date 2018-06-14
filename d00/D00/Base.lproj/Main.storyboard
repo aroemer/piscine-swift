@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="D00" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rL-Nb-4oU">
+                                <rect key="frame" x="40" y="626" width="166" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n0i-S4-asd"/>
+                                    <constraint firstAttribute="width" constant="166" id="yTP-l6-ePh"/>
+                                </constraints>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZfC-JW-qIY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZF6-jp-g2k">
+                                <rect key="frame" x="40" y="568" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="RlG-LQ-it8"/>
+                                    <constraint firstAttribute="height" constant="50" id="S0h-fr-DYF"/>
+                                </constraints>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ed-hr-V8X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-N5-mXE">
+                                <rect key="frame" x="156" y="510" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3BT-D5-MNz"/>
+                                    <constraint firstAttribute="width" constant="50" id="oNS-hM-QRu"/>
+                                </constraints>
+                                <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vh1-x9-YMK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OON-XC-dbc">
+                                <rect key="frame" x="98" y="510" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="n3w-sy-RVn"/>
+                                    <constraint firstAttribute="height" constant="50" id="y3N-kw-Rg6"/>
+                                </constraints>
+                                <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVA-EE-oIq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQU-xv-WTq">
+                                <rect key="frame" x="40" y="510" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="BrH-FI-b29"/>
+                                    <constraint firstAttribute="height" constant="50" id="Kjg-8v-IeR"/>
+                                </constraints>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpz-Hn-Kzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFT-RH-m4H">
+                                <rect key="frame" x="40" y="452" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ru3-BW-7Xu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ydr-yW-xGj"/>
+                                </constraints>
+                                <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiD-wy-9fV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1W-Mq-z1p">
+                                <rect key="frame" x="40" y="394" width="108" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="Dvh-UL-fzp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IgR-Mr-Vd3"/>
+                                </constraints>
+                                <state key="normal" title="AC"/>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHS-X9-kzJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxd-N3-zJ3">
+                                <rect key="frame" x="98" y="452" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Rcr-sJ-akX"/>
+                                    <constraint firstAttribute="height" constant="50" id="d8O-4j-rjF"/>
+                                </constraints>
+                                <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8P-RG-o9y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-Wc-jOT">
+                                <rect key="frame" x="156" y="452" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KXx-u6-ds9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="QCR-kA-mQ2"/>
+                                </constraints>
+                                <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3S-16-1Uj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-Hp-zIb">
+                                <rect key="frame" x="98" y="568" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5P1-ID-ZZy"/>
+                                    <constraint firstAttribute="height" constant="50" id="o6d-du-WGb"/>
+                                </constraints>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXE-D9-LxT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-ks-ua8">
+                                <rect key="frame" x="156" y="568" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="U7r-nj-WaH"/>
+                                    <constraint firstAttribute="width" constant="50" id="uGW-4P-EG8"/>
+                                </constraints>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="NumberButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8O-mm-JD4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrE-vX-Ydn">
+                                <rect key="frame" x="214" y="568" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2eI-ix-o44"/>
+                                    <constraint firstAttribute="height" constant="50" id="jHV-Ii-0SZ"/>
+                                </constraints>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POf-TH-wgk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoN-k4-fFk">
+                                <rect key="frame" x="214" y="626" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Vy4-5f-q9n"/>
+                                    <constraint firstAttribute="height" constant="50" id="kdQ-js-Poh"/>
+                                </constraints>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kf7-vb-QPp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-zE-c5c">
+                                <rect key="frame" x="214" y="510" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="O1H-ag-6hi"/>
+                                    <constraint firstAttribute="width" constant="50" id="w20-p5-dht"/>
+                                </constraints>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQI-UD-8It"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-oz-Chg">
+                                <rect key="frame" x="214" y="452" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="0I6-4w-U4O"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="xb1-cR-xe7"/>
+                                </constraints>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plj-eU-Ilo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-oq-eWo">
+                                <rect key="frame" x="214" y="394" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="VLY-Ne-FyP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="bac-lR-Ohy"/>
+                                </constraints>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUe-mg-2Wc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-HB-zfn">
+                                <rect key="frame" x="156" y="394" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Np1-FC-y4a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="sSu-pZ-UON"/>
+                                </constraints>
+                                <state key="normal" title="NEG"/>
+                                <connections>
+                                    <action selector="OperatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xo1-hW-kZz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na8-mU-mhi">
+                                <rect key="frame" x="40" y="336" width="224" height="50"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="RWE-pm-Ds0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="mOq-vN-tHR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="C0y-zE-c5c" firstAttribute="top" secondItem="LFZ-oz-Chg" secondAttribute="bottom" constant="8" symbolic="YES" id="2Yu-2e-tKh"/>
+                            <constraint firstItem="eRu-Hp-zIb" firstAttribute="leading" secondItem="ZF6-jp-g2k" secondAttribute="trailing" constant="8" symbolic="YES" id="5U5-FI-UhG"/>
+                            <constraint firstItem="jrE-vX-Ydn" firstAttribute="centerY" secondItem="5eQ-ks-ua8" secondAttribute="centerY" id="5j3-tu-hob"/>
+                            <constraint firstItem="LFZ-oz-Chg" firstAttribute="leading" secondItem="UP5-Wc-jOT" secondAttribute="trailing" constant="8" symbolic="YES" id="6oD-ya-fEU"/>
+                            <constraint firstItem="SQU-xv-WTq" firstAttribute="top" secondItem="cFT-RH-m4H" secondAttribute="bottom" constant="8" symbolic="YES" id="74I-t0-t7f"/>
+                            <constraint firstItem="YtD-HB-zfn" firstAttribute="leading" secondItem="v1W-Mq-z1p" secondAttribute="trailing" constant="8" symbolic="YES" id="7fL-EY-lcg"/>
+                            <constraint firstItem="jrE-vX-Ydn" firstAttribute="leading" secondItem="5eQ-ks-ua8" secondAttribute="trailing" constant="8" symbolic="YES" id="7iH-NR-ihb"/>
+                            <constraint firstItem="5rL-Nb-4oU" firstAttribute="top" secondItem="eRu-Hp-zIb" secondAttribute="bottom" constant="8" symbolic="YES" id="8Py-YA-C8B"/>
+                            <constraint firstItem="5eQ-ks-ua8" firstAttribute="leading" secondItem="eRu-Hp-zIb" secondAttribute="trailing" constant="8" symbolic="YES" id="8v7-3V-nMe"/>
+                            <constraint firstItem="T8E-oq-eWo" firstAttribute="centerY" secondItem="YtD-HB-zfn" secondAttribute="centerY" id="BGH-SQ-VpE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Na8-mU-mhi" secondAttribute="trailing" constant="40" id="ChJ-bJ-u64"/>
+                            <constraint firstItem="Hxd-N3-zJ3" firstAttribute="centerY" secondItem="UP5-Wc-jOT" secondAttribute="centerY" id="CsU-f9-Qfn"/>
+                            <constraint firstItem="OON-XC-dbc" firstAttribute="centerY" secondItem="SQU-xv-WTq" secondAttribute="centerY" id="Cx2-m1-WYo"/>
+                            <constraint firstItem="SQU-xv-WTq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="DG4-gF-3wI"/>
+                            <constraint firstItem="wgP-N5-mXE" firstAttribute="centerY" secondItem="OON-XC-dbc" secondAttribute="centerY" id="FOB-KD-mnb"/>
+                            <constraint firstItem="v1W-Mq-z1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Gfo-pc-ayl"/>
+                            <constraint firstItem="wgP-N5-mXE" firstAttribute="leading" secondItem="OON-XC-dbc" secondAttribute="trailing" constant="8" symbolic="YES" id="IDs-fU-KiN"/>
+                            <constraint firstItem="C0y-zE-c5c" firstAttribute="centerY" secondItem="wgP-N5-mXE" secondAttribute="centerY" id="LOY-pQ-Nzk"/>
+                            <constraint firstItem="eRu-Hp-zIb" firstAttribute="centerY" secondItem="ZF6-jp-g2k" secondAttribute="centerY" id="NtT-t2-qSV"/>
+                            <constraint firstItem="ZF6-jp-g2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Pi6-vH-ENr"/>
+                            <constraint firstItem="JoN-k4-fFk" firstAttribute="centerY" secondItem="5rL-Nb-4oU" secondAttribute="centerY" id="R8h-jy-egg"/>
+                            <constraint firstItem="Na8-mU-mhi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RJQ-s7-t1w"/>
+                            <constraint firstItem="JoN-k4-fFk" firstAttribute="top" secondItem="jrE-vX-Ydn" secondAttribute="bottom" constant="8" symbolic="YES" id="UZm-LV-S2H"/>
+                            <constraint firstItem="5rL-Nb-4oU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WTY-IY-g3q"/>
+                            <constraint firstItem="YtD-HB-zfn" firstAttribute="centerY" secondItem="v1W-Mq-z1p" secondAttribute="centerY" id="aHU-Vn-Mcz"/>
+                            <constraint firstItem="OON-XC-dbc" firstAttribute="leading" secondItem="SQU-xv-WTq" secondAttribute="trailing" constant="8" symbolic="YES" id="agR-Rk-gIQ"/>
+                            <constraint firstItem="cFT-RH-m4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="brT-yQ-Pcn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5rL-Nb-4oU" secondAttribute="bottom" constant="60" id="eoa-cm-wEI"/>
+                            <constraint firstItem="ZF6-jp-g2k" firstAttribute="top" secondItem="SQU-xv-WTq" secondAttribute="bottom" constant="8" symbolic="YES" id="ftm-6D-cSe"/>
+                            <constraint firstItem="UP5-Wc-jOT" firstAttribute="top" secondItem="YtD-HB-zfn" secondAttribute="bottom" constant="8" symbolic="YES" id="hJk-2Z-sLW"/>
+                            <constraint firstItem="Na8-mU-mhi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jY2-Iz-7DF"/>
+                            <constraint firstItem="C0y-zE-c5c" firstAttribute="leading" secondItem="wgP-N5-mXE" secondAttribute="trailing" constant="8" symbolic="YES" id="m1d-6i-ZFL"/>
+                            <constraint firstItem="jrE-vX-Ydn" firstAttribute="top" secondItem="C0y-zE-c5c" secondAttribute="bottom" constant="8" symbolic="YES" id="odO-fT-Qvt"/>
+                            <constraint firstItem="LFZ-oz-Chg" firstAttribute="centerY" secondItem="UP5-Wc-jOT" secondAttribute="centerY" id="pBK-hv-bHa"/>
+                            <constraint firstItem="LFZ-oz-Chg" firstAttribute="top" secondItem="T8E-oq-eWo" secondAttribute="bottom" constant="8" symbolic="YES" id="pPs-kd-9wi"/>
+                            <constraint firstItem="T8E-oq-eWo" firstAttribute="leading" secondItem="YtD-HB-zfn" secondAttribute="trailing" constant="8" symbolic="YES" id="qRR-SG-e07"/>
+                            <constraint firstItem="JoN-k4-fFk" firstAttribute="leading" secondItem="5rL-Nb-4oU" secondAttribute="trailing" constant="8" symbolic="YES" id="r5v-Jf-VGv"/>
+                            <constraint firstItem="cFT-RH-m4H" firstAttribute="centerY" secondItem="Hxd-N3-zJ3" secondAttribute="centerY" id="utg-ze-uOa"/>
+                            <constraint firstItem="5rL-Nb-4oU" firstAttribute="top" secondItem="ZF6-jp-g2k" secondAttribute="bottom" constant="8" symbolic="YES" id="wVS-Wp-JNB"/>
+                            <constraint firstItem="cFT-RH-m4H" firstAttribute="top" secondItem="v1W-Mq-z1p" secondAttribute="bottom" constant="8" symbolic="YES" id="wz1-eO-4VE"/>
+                            <constraint firstItem="UP5-Wc-jOT" firstAttribute="leading" secondItem="Hxd-N3-zJ3" secondAttribute="trailing" constant="8" symbolic="YES" id="xA3-5y-KWH"/>
+                            <constraint firstItem="5eQ-ks-ua8" firstAttribute="centerY" secondItem="eRu-Hp-zIb" secondAttribute="centerY" id="xLh-A0-csI"/>
+                            <constraint firstItem="v1W-Mq-z1p" firstAttribute="top" secondItem="Na8-mU-mhi" secondAttribute="bottom" constant="8" symbolic="YES" id="xlv-ek-enf"/>
+                            <constraint firstItem="Hxd-N3-zJ3" firstAttribute="leading" secondItem="cFT-RH-m4H" secondAttribute="trailing" constant="8" symbolic="YES" id="z0p-E7-x0O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ResultLabel" destination="Na8-mU-mhi" id="etk-HR-ZrX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
