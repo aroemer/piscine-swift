@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC20A4591FE24FB700146930 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20A4581FE24FB700146930 /* DateFormatter.swift */; };
+		EC20A45B1FE252B700146930 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20A45A1FE252B700146930 /* MessagesController.swift */; };
+		EC20A45D1FE258F800146930 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20A45C1FE258F800146930 /* MessageCell.swift */; };
+		EC20A45F1FE25C6B00146930 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20A45E1FE25C6B00146930 /* Message.swift */; };
+		EC20A4611FE25E1300146930 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20A4601FE25E1300146930 /* Vote.swift */; };
+		EC20A4631FE3A89F00146930 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20A4621FE3A89F00146930 /* UIEdgeInsets.swift */; };
+		EC61613F1FD6B9D1003D6665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61613E1FD6B9D1003D6665 /* AppDelegate.swift */; };
+		EC6161411FD6B9D1003D6665 /* TopicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161401FD6B9D1003D6665 /* TopicsController.swift */; };
+		EC6161461FD6B9D1003D6665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6161451FD6B9D1003D6665 /* Assets.xcassets */; };
+		EC6161491FD6B9D1003D6665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6161471FD6B9D1003D6665 /* LaunchScreen.storyboard */; };
+		EC6161521FD6C168003D6665 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161511FD6C168003D6665 /* LoginController.swift */; };
+		EC6161551FD6C3A2003D6665 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161541FD6C3A2003D6665 /* UIView+Constraint.swift */; };
+		EC6161571FD6C607003D6665 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161561FD6C607003D6665 /* UIColor.swift */; };
+		EC6161861FD6C8E9003D6665 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161851FD6C8E9003D6665 /* UIFont.swift */; };
+		EC61618B1FD6E058003D6665 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61618A1FD6E058003D6665 /* LoginService.swift */; };
+		EC61618D1FD6F70D003D6665 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61618C1FD6F70D003D6665 /* String.swift */; };
+		EC61618F1FD6F9A7003D6665 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61618E1FD6F9A7003D6665 /* APIService.swift */; };
+		EC6161911FD6FCD1003D6665 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161901FD6FCD1003D6665 /* DataService.swift */; };
+		EC6161941FD70A27003D6665 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161931FD70A27003D6665 /* Topic.swift */; };
+		EC6161961FD70A4B003D6665 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6161951FD70A4B003D6665 /* Student.swift */; };
+		EC61619B1FD70F02003D6665 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61619A1FD70F02003D6665 /* TopicCell.swift */; };
+		EC61619D1FD711BB003D6665 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61619C1FD711BB003D6665 /* ImageService.swift */; };
+		ECB08970206A4DEA00D40BBE /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB0896F206A4DEA00D40BBE /* Configurations.swift */; };
+		ECB08989206A4E4200D40BBE /* FuturaPTLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08973206A4E4000D40BBE /* FuturaPTLight.otf */; };
+		ECB0898A206A4E4200D40BBE /* FuturaPTMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08974206A4E4000D40BBE /* FuturaPTMedium.otf */; };
+		ECB0898B206A4E4200D40BBE /* FuturaPTCondBookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08975206A4E4000D40BBE /* FuturaPTCondBookOblique.otf */; };
+		ECB0898C206A4E4200D40BBE /* FuturaPTCondBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08976206A4E4100D40BBE /* FuturaPTCondBoldOblique.otf */; };
+		ECB0898D206A4E4200D40BBE /* FuturaPTBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08977206A4E4100D40BBE /* FuturaPTBoldOblique.otf */; };
+		ECB0898E206A4E4200D40BBE /* FuturaPTCondMediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08978206A4E4100D40BBE /* FuturaPTCondMediumOblique.otf */; };
+		ECB0898F206A4E4200D40BBE /* FuturaPTDemi.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08979206A4E4100D40BBE /* FuturaPTDemi.otf */; };
+		ECB08990206A4E4200D40BBE /* FuturaPTLightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB0897A206A4E4100D40BBE /* FuturaPTLightOblique.otf */; };
+		ECB08991206A4E4200D40BBE /* FuturaPTCondMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB0897B206A4E4100D40BBE /* FuturaPTCondMedium.otf */; };
+		ECB08992206A4E4200D40BBE /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB0897C206A4E4100D40BBE /* FuturaPTBook.otf */; };
+		ECB08993206A4E4200D40BBE /* FuturaPTCondBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB0897D206A4E4100D40BBE /* FuturaPTCondBold.otf */; };
+		ECB08994206A4E4200D40BBE /* FuturaPTCondExtraBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB0897E206A4E4100D40BBE /* FuturaPTCondExtraBoldOblique.otf */; };
+		ECB08995206A4E4200D40BBE /* FuturaPTCondExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB0897F206A4E4100D40BBE /* FuturaPTCondExtraBold.otf */; };
+		ECB08996206A4E4200D40BBE /* FuturaPTCondBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08980206A4E4100D40BBE /* FuturaPTCondBook.otf */; };
+		ECB08997206A4E4200D40BBE /* FuturaPTBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08981206A4E4100D40BBE /* FuturaPTBold.otf */; };
+		ECB08998206A4E4200D40BBE /* FuturaPTExtraBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08982206A4E4100D40BBE /* FuturaPTExtraBoldOblique.otf */; };
+		ECB08999206A4E4200D40BBE /* FuturaPTMediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08983206A4E4100D40BBE /* FuturaPTMediumOblique.otf */; };
+		ECB0899A206A4E4200D40BBE /* FuturaPTExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08984206A4E4100D40BBE /* FuturaPTExtraBold.otf */; };
+		ECB0899B206A4E4200D40BBE /* FuturaPTBookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08985206A4E4100D40BBE /* FuturaPTBookOblique.otf */; };
+		ECB0899C206A4E4200D40BBE /* FuturaPTDemiOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08986206A4E4100D40BBE /* FuturaPTDemiOblique.otf */; };
+		ECB0899D206A4E4200D40BBE /* FuturaPTHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08987206A4E4200D40BBE /* FuturaPTHeavy.otf */; };
+		ECB0899E206A4E4200D40BBE /* FuturaPTHeavyOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = ECB08988206A4E4200D40BBE /* FuturaPTHeavyOblique.otf */; };
+		ECCC011A1FFBBE12004D20F3 /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC01191FFBBE12004D20F3 /* PopupController.swift */; };
+		ECCC011C1FFCC383004D20F3 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC011B1FFCC383004D20F3 /* PopupView.swift */; };
+		ECCC011E1FFD19BF004D20F3 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC011D1FFD19BF004D20F3 /* FieldCell.swift */; };
+		ECE0C46020626A11007FB15B /* AddTopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE0C45F20626A11007FB15B /* AddTopicController.swift */; };
+		ECE0C46220626C20007FB15B /* AddMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE0C46120626C20007FB15B /* AddMessageController.swift */; };
+		ECE0C46420627A81007FB15B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE0C46320627A81007FB15B /* Constants.swift */; };
+		ECE0C46820628651007FB15B /* EditMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE0C46720628651007FB15B /* EditMessageController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC20A4581FE24FB700146930 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		EC20A45A1FE252B700146930 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		EC20A45C1FE258F800146930 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		EC20A45E1FE25C6B00146930 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EC20A4601FE25E1300146930 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		EC20A4621FE3A89F00146930 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		EC522BFC206F81D3007FE890 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EC61613B1FD6B9D1003D6665 /* Forum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC61613E1FD6B9D1003D6665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC6161401FD6B9D1003D6665 /* TopicsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsController.swift; sourceTree = "<group>"; };
+		EC6161451FD6B9D1003D6665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6161481FD6B9D1003D6665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC61614A1FD6B9D1003D6665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6161511FD6C168003D6665 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EC6161541FD6C3A2003D6665 /* UIView+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		EC6161561FD6C607003D6665 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		EC6161851FD6C8E9003D6665 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		EC61618A1FD6E058003D6665 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EC61618C1FD6F70D003D6665 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EC61618E1FD6F9A7003D6665 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EC6161901FD6FCD1003D6665 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		EC6161931FD70A27003D6665 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		EC6161951FD70A4B003D6665 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		EC61619A1FD70F02003D6665 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		EC61619C1FD711BB003D6665 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		ECB0896F206A4DEA00D40BBE /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		ECB08973206A4E4000D40BBE /* FuturaPTLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTLight.otf; path = Fonts/FuturaPTLight.otf; sourceTree = "<group>"; };
+		ECB08974206A4E4000D40BBE /* FuturaPTMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTMedium.otf; path = Fonts/FuturaPTMedium.otf; sourceTree = "<group>"; };
+		ECB08975206A4E4000D40BBE /* FuturaPTCondBookOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondBookOblique.otf; path = Fonts/FuturaPTCondBookOblique.otf; sourceTree = "<group>"; };
+		ECB08976206A4E4100D40BBE /* FuturaPTCondBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondBoldOblique.otf; path = Fonts/FuturaPTCondBoldOblique.otf; sourceTree = "<group>"; };
+		ECB08977206A4E4100D40BBE /* FuturaPTBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTBoldOblique.otf; path = Fonts/FuturaPTBoldOblique.otf; sourceTree = "<group>"; };
+		ECB08978206A4E4100D40BBE /* FuturaPTCondMediumOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondMediumOblique.otf; path = Fonts/FuturaPTCondMediumOblique.otf; sourceTree = "<group>"; };
+		ECB08979206A4E4100D40BBE /* FuturaPTDemi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTDemi.otf; path = Fonts/FuturaPTDemi.otf; sourceTree = "<group>"; };
+		ECB0897A206A4E4100D40BBE /* FuturaPTLightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTLightOblique.otf; path = Fonts/FuturaPTLightOblique.otf; sourceTree = "<group>"; };
+		ECB0897B206A4E4100D40BBE /* FuturaPTCondMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondMedium.otf; path = Fonts/FuturaPTCondMedium.otf; sourceTree = "<group>"; };
+		ECB0897C206A4E4100D40BBE /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTBook.otf; path = Fonts/FuturaPTBook.otf; sourceTree = "<group>"; };
+		ECB0897D206A4E4100D40BBE /* FuturaPTCondBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondBold.otf; path = Fonts/FuturaPTCondBold.otf; sourceTree = "<group>"; };
+		ECB0897E206A4E4100D40BBE /* FuturaPTCondExtraBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondExtraBoldOblique.otf; path = Fonts/FuturaPTCondExtraBoldOblique.otf; sourceTree = "<group>"; };
+		ECB0897F206A4E4100D40BBE /* FuturaPTCondExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondExtraBold.otf; path = Fonts/FuturaPTCondExtraBold.otf; sourceTree = "<group>"; };
+		ECB08980206A4E4100D40BBE /* FuturaPTCondBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTCondBook.otf; path = Fonts/FuturaPTCondBook.otf; sourceTree = "<group>"; };
+		ECB08981206A4E4100D40BBE /* FuturaPTBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTBold.otf; path = Fonts/FuturaPTBold.otf; sourceTree = "<group>"; };
+		ECB08982206A4E4100D40BBE /* FuturaPTExtraBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTExtraBoldOblique.otf; path = Fonts/FuturaPTExtraBoldOblique.otf; sourceTree = "<group>"; };
+		ECB08983206A4E4100D40BBE /* FuturaPTMediumOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTMediumOblique.otf; path = Fonts/FuturaPTMediumOblique.otf; sourceTree = "<group>"; };
+		ECB08984206A4E4100D40BBE /* FuturaPTExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTExtraBold.otf; path = Fonts/FuturaPTExtraBold.otf; sourceTree = "<group>"; };
+		ECB08985206A4E4100D40BBE /* FuturaPTBookOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTBookOblique.otf; path = Fonts/FuturaPTBookOblique.otf; sourceTree = "<group>"; };
+		ECB08986206A4E4100D40BBE /* FuturaPTDemiOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTDemiOblique.otf; path = Fonts/FuturaPTDemiOblique.otf; sourceTree = "<group>"; };
+		ECB08987206A4E4200D40BBE /* FuturaPTHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTHeavy.otf; path = Fonts/FuturaPTHeavy.otf; sourceTree = "<group>"; };
+		ECB08988206A4E4200D40BBE /* FuturaPTHeavyOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaPTHeavyOblique.otf; path = Fonts/FuturaPTHeavyOblique.otf; sourceTree = "<group>"; };
+		ECCC01191FFBBE12004D20F3 /* PopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupController.swift; sourceTree = "<group>"; };
+		ECCC011B1FFCC383004D20F3 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		ECCC011D1FFD19BF004D20F3 /* FieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
+		ECE0C45F20626A11007FB15B /* AddTopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicController.swift; sourceTree = "<group>"; };
+		ECE0C46120626C20007FB15B /* AddMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMessageController.swift; sourceTree = "<group>"; };
+		ECE0C46320627A81007FB15B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECE0C46720628651007FB15B /* EditMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMessageController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC6161381FD6B9D1003D6665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC6161321FD6B9D1003D6665 = {
+			isa = PBXGroup;
+			children = (
+				EC522BFC206F81D3007FE890 /* README.md */,
+				EC61613D1FD6B9D1003D6665 /* Forum */,
+				EC61613C1FD6B9D1003D6665 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC61613C1FD6B9D1003D6665 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC61613B1FD6B9D1003D6665 /* Forum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC61613D1FD6B9D1003D6665 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				EC61613E1FD6B9D1003D6665 /* AppDelegate.swift */,
+				ECB0896F206A4DEA00D40BBE /* Configurations.swift */,
+				ECE0C46320627A81007FB15B /* Constants.swift */,
+				EC6161501FD6C149003D6665 /* Controllers */,
+				EC6161921FD70A15003D6665 /* Models */,
+				EC6161991FD70EE1003D6665 /* Views */,
+				EC6161891FD6E047003D6665 /* Services */,
+				EC6161531FD6C38C003D6665 /* Toolbox */,
+				ECB08972206A4E3300D40BBE /* Fonts */,
+				EC6161451FD6B9D1003D6665 /* Assets.xcassets */,
+				EC6161471FD6B9D1003D6665 /* LaunchScreen.storyboard */,
+				EC61614A1FD6B9D1003D6665 /* Info.plist */,
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		EC6161501FD6C149003D6665 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC6161511FD6C168003D6665 /* LoginController.swift */,
+				EC6161401FD6B9D1003D6665 /* TopicsController.swift */,
+				EC20A45A1FE252B700146930 /* MessagesController.swift */,
+				ECCC01191FFBBE12004D20F3 /* PopupController.swift */,
+				ECE0C45F20626A11007FB15B /* AddTopicController.swift */,
+				ECE0C46120626C20007FB15B /* AddMessageController.swift */,
+				ECE0C46720628651007FB15B /* EditMessageController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC6161531FD6C38C003D6665 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				EC6161541FD6C3A2003D6665 /* UIView+Constraint.swift */,
+				EC6161561FD6C607003D6665 /* UIColor.swift */,
+				EC6161851FD6C8E9003D6665 /* UIFont.swift */,
+				EC61618C1FD6F70D003D6665 /* String.swift */,
+				EC20A4581FE24FB700146930 /* DateFormatter.swift */,
+				EC20A4621FE3A89F00146930 /* UIEdgeInsets.swift */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+		EC6161891FD6E047003D6665 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC6161901FD6FCD1003D6665 /* DataService.swift */,
+				EC61618A1FD6E058003D6665 /* LoginService.swift */,
+				EC61618E1FD6F9A7003D6665 /* APIService.swift */,
+				EC61619C1FD711BB003D6665 /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC6161921FD70A15003D6665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC6161931FD70A27003D6665 /* Topic.swift */,
+				EC6161951FD70A4B003D6665 /* Student.swift */,
+				EC20A45E1FE25C6B00146930 /* Message.swift */,
+				EC20A4601FE25E1300146930 /* Vote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC6161991FD70EE1003D6665 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC61619A1FD70F02003D6665 /* TopicCell.swift */,
+				EC20A45C1FE258F800146930 /* MessageCell.swift */,
+				ECCC011B1FFCC383004D20F3 /* PopupView.swift */,
+				ECCC011D1FFD19BF004D20F3 /* FieldCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECB08972206A4E3300D40BBE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ECB08981206A4E4100D40BBE /* FuturaPTBold.otf */,
+				ECB08977206A4E4100D40BBE /* FuturaPTBoldOblique.otf */,
+				ECB0897C206A4E4100D40BBE /* FuturaPTBook.otf */,
+				ECB08985206A4E4100D40BBE /* FuturaPTBookOblique.otf */,
+				ECB0897D206A4E4100D40BBE /* FuturaPTCondBold.otf */,
+				ECB08976206A4E4100D40BBE /* FuturaPTCondBoldOblique.otf */,
+				ECB08980206A4E4100D40BBE /* FuturaPTCondBook.otf */,
+				ECB08975206A4E4000D40BBE /* FuturaPTCondBookOblique.otf */,
+				ECB0897F206A4E4100D40BBE /* FuturaPTCondExtraBold.otf */,
+				ECB0897E206A4E4100D40BBE /* FuturaPTCondExtraBoldOblique.otf */,
+				ECB0897B206A4E4100D40BBE /* FuturaPTCondMedium.otf */,
+				ECB08978206A4E4100D40BBE /* FuturaPTCondMediumOblique.otf */,
+				ECB08979206A4E4100D40BBE /* FuturaPTDemi.otf */,
+				ECB08986206A4E4100D40BBE /* FuturaPTDemiOblique.otf */,
+				ECB08984206A4E4100D40BBE /* FuturaPTExtraBold.otf */,
+				ECB08982206A4E4100D40BBE /* FuturaPTExtraBoldOblique.otf */,
+				ECB08987206A4E4200D40BBE /* FuturaPTHeavy.otf */,
+				ECB08988206A4E4200D40BBE /* FuturaPTHeavyOblique.otf */,
+				ECB08973206A4E4000D40BBE /* FuturaPTLight.otf */,
+				ECB0897A206A4E4100D40BBE /* FuturaPTLightOblique.otf */,
+				ECB08974206A4E4000D40BBE /* FuturaPTMedium.otf */,
+				ECB08983206A4E4100D40BBE /* FuturaPTMediumOblique.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC61613A1FD6B9D1003D6665 /* Forum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC61614D1FD6B9D1003D6665 /* Build configuration list for PBXNativeTarget "Forum" */;
+			buildPhases = (
+				EC6161371FD6B9D1003D6665 /* Sources */,
+				EC6161381FD6B9D1003D6665 /* Frameworks */,
+				EC6161391FD6B9D1003D6665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Forum;
+			productName = Forum;
+			productReference = EC61613B1FD6B9D1003D6665 /* Forum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC6161331FD6B9D1003D6665 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Alexandre Legent";
+				TargetAttributes = {
+					EC61613A1FD6B9D1003D6665 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC6161361FD6B9D1003D6665 /* Build configuration list for PBXProject "Forum" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC6161321FD6B9D1003D6665;
+			productRefGroup = EC61613C1FD6B9D1003D6665 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC61613A1FD6B9D1003D6665 /* Forum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC6161391FD6B9D1003D6665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB0899E206A4E4200D40BBE /* FuturaPTHeavyOblique.otf in Resources */,
+				ECB0899A206A4E4200D40BBE /* FuturaPTExtraBold.otf in Resources */,
+				ECB0899B206A4E4200D40BBE /* FuturaPTBookOblique.otf in Resources */,
+				ECB08991206A4E4200D40BBE /* FuturaPTCondMedium.otf in Resources */,
+				ECB08989206A4E4200D40BBE /* FuturaPTLight.otf in Resources */,
+				ECB08990206A4E4200D40BBE /* FuturaPTLightOblique.otf in Resources */,
+				ECB08995206A4E4200D40BBE /* FuturaPTCondExtraBold.otf in Resources */,
+				ECB08997206A4E4200D40BBE /* FuturaPTBold.otf in Resources */,
+				ECB0899C206A4E4200D40BBE /* FuturaPTDemiOblique.otf in Resources */,
+				ECB0898F206A4E4200D40BBE /* FuturaPTDemi.otf in Resources */,
+				ECB08996206A4E4200D40BBE /* FuturaPTCondBook.otf in Resources */,
+				ECB0898A206A4E4200D40BBE /* FuturaPTMedium.otf in Resources */,
+				ECB0899D206A4E4200D40BBE /* FuturaPTHeavy.otf in Resources */,
+				EC6161491FD6B9D1003D6665 /* LaunchScreen.storyboard in Resources */,
+				ECB08993206A4E4200D40BBE /* FuturaPTCondBold.otf in Resources */,
+				EC6161461FD6B9D1003D6665 /* Assets.xcassets in Resources */,
+				ECB0898B206A4E4200D40BBE /* FuturaPTCondBookOblique.otf in Resources */,
+				ECB08999206A4E4200D40BBE /* FuturaPTMediumOblique.otf in Resources */,
+				ECB08998206A4E4200D40BBE /* FuturaPTExtraBoldOblique.otf in Resources */,
+				ECB0898E206A4E4200D40BBE /* FuturaPTCondMediumOblique.otf in Resources */,
+				ECB08992206A4E4200D40BBE /* FuturaPTBook.otf in Resources */,
+				ECB0898C206A4E4200D40BBE /* FuturaPTCondBoldOblique.otf in Resources */,
+				ECB08994206A4E4200D40BBE /* FuturaPTCondExtraBoldOblique.otf in Resources */,
+				ECB0898D206A4E4200D40BBE /* FuturaPTBoldOblique.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC6161371FD6B9D1003D6665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC61619D1FD711BB003D6665 /* ImageService.swift in Sources */,
+				EC6161941FD70A27003D6665 /* Topic.swift in Sources */,
+				EC6161411FD6B9D1003D6665 /* TopicsController.swift in Sources */,
+				EC6161521FD6C168003D6665 /* LoginController.swift in Sources */,
+				EC61618D1FD6F70D003D6665 /* String.swift in Sources */,
+				ECCC011E1FFD19BF004D20F3 /* FieldCell.swift in Sources */,
+				EC20A4591FE24FB700146930 /* DateFormatter.swift in Sources */,
+				EC6161861FD6C8E9003D6665 /* UIFont.swift in Sources */,
+				EC20A4631FE3A89F00146930 /* UIEdgeInsets.swift in Sources */,
+				EC6161911FD6FCD1003D6665 /* DataService.swift in Sources */,
+				ECE0C46220626C20007FB15B /* AddMessageController.swift in Sources */,
+				ECE0C46020626A11007FB15B /* AddTopicController.swift in Sources */,
+				ECCC011A1FFBBE12004D20F3 /* PopupController.swift in Sources */,
+				EC20A4611FE25E1300146930 /* Vote.swift in Sources */,
+				EC20A45D1FE258F800146930 /* MessageCell.swift in Sources */,
+				EC6161961FD70A4B003D6665 /* Student.swift in Sources */,
+				EC61613F1FD6B9D1003D6665 /* AppDelegate.swift in Sources */,
+				EC61618F1FD6F9A7003D6665 /* APIService.swift in Sources */,
+				EC6161551FD6C3A2003D6665 /* UIView+Constraint.swift in Sources */,
+				EC6161571FD6C607003D6665 /* UIColor.swift in Sources */,
+				ECE0C46820628651007FB15B /* EditMessageController.swift in Sources */,
+				EC61619B1FD70F02003D6665 /* TopicCell.swift in Sources */,
+				EC20A45F1FE25C6B00146930 /* Message.swift in Sources */,
+				EC61618B1FD6E058003D6665 /* LoginService.swift in Sources */,
+				ECB08970206A4DEA00D40BBE /* Configurations.swift in Sources */,
+				EC20A45B1FE252B700146930 /* MessagesController.swift in Sources */,
+				ECCC011C1FFCC383004D20F3 /* PopupView.swift in Sources */,
+				ECE0C46420627A81007FB15B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC6161471FD6B9D1003D6665 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6161481FD6B9D1003D6665 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC61614B1FD6B9D1003D6665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC61614C1FD6B9D1003D6665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC61614E1FD6B9D1003D6665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYLSF63326;
+				INFOPLIST_FILE = Forum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.alegent.Forum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC61614F1FD6B9D1003D6665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SYLSF63326;
+				INFOPLIST_FILE = Forum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.alegent.Forum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC6161361FD6B9D1003D6665 /* Build configuration list for PBXProject "Forum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC61614B1FD6B9D1003D6665 /* Debug */,
+				EC61614C1FD6B9D1003D6665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC61614D1FD6B9D1003D6665 /* Build configuration list for PBXNativeTarget "Forum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC61614E1FD6B9D1003D6665 /* Debug */,
+				EC61614F1FD6B9D1003D6665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC6161331FD6B9D1003D6665 /* Project object */;
+}

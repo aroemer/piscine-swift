@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'aroemer2018_Example' do
+  pod 'aroemer2018', :path => '../'
+
+  target 'aroemer2018_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

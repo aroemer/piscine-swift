@@ -1,0 +1,5 @@
+let card1 = Card(color : Color.Heart, value : Value.Ace)
+let card2 = Card(color : Color.Spade, value : Value.Two)
+print(card1.description)
+print(card2.description)
+print(card1 == card2)

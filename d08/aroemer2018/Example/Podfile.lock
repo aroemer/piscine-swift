@@ -1,0 +1,16 @@
+PODS:
+  - aroemer2018 (0.1.0)
+
+DEPENDENCIES:
+  - aroemer2018 (from `../`)
+
+EXTERNAL SOURCES:
+  aroemer2018:
+    :path: ../
+
+SPEC CHECKSUMS:
+  aroemer2018: de8b342ca6409393b631b80ca5d93c7f04bbd022
+
+PODFILE CHECKSUM: a0e76da61d472a90c19daadd0e01d015f8ffffa5
+
+COCOAPODS: 1.4.0

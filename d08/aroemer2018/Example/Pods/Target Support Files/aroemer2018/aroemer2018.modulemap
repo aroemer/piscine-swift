@@ -1,0 +1,6 @@
+framework module aroemer2018 {
+  umbrella header "aroemer2018-umbrella.h"
+
+  export *
+  module * { export * }
+}
